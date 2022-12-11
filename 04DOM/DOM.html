@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: rgb(12,112,242);
+            color: white;   
+        }
+
+        div {
+            padding: 30px;
+
+        }
+    </style>
+</head>
+<body id="principal">
+    <div> 
+        <h1> Aprendendo DOM </h1>
+        <p> Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500</p>
+        <button> Clique aqui </button>
+        <button> Clique aqui 2</button>
+    
+    </div>
+
+    <script>
+        //window.document.write("Minha primeira manipulação com o DOM")
+        //window.alert("oi")
+        var x = window.document.getElementById("principal")
+        x.style.background ="black"
+        var y = window.document.getElementsByTagName("button")[0]
+        y.innerHTML = "clique ali"
+
+    </script>
+    
+</body>
+</html>
